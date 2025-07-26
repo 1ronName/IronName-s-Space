@@ -2,7 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Navbar from "./Navbar"; // 引入导航栏组件
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 const Home = () => {
   return (
