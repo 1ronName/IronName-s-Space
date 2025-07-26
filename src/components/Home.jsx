@@ -2,11 +2,13 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Navbar from "./Navbar"; // 引入导航栏组件
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const Home = () => {
   return (
     <>
       <Navbar />
+      <SpeedInsights />
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
