@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { SocialLink } from "../../types";
-import Card from "../common/Card";
-import Icon from "../common/Icon";
+import Card from "@/components/common/Card";
+import Icon from "@/components/common/Icon";
+import { SocialLink } from "@/types";
 
 interface ProfileCardProps {
   name: string;

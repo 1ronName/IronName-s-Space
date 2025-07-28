@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Skill } from "../../types";
-import Icon from "../common/Icon";
+import { Skill } from "@/types";
+import Icon from "@/components/common/Icon";
 
 interface SkillCardProps {
   skill: Skill;

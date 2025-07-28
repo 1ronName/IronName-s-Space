@@ -1,10 +1,10 @@
-import { Profile } from '../types';
+import { Profile } from '@/types';
 
-export const profileData : Profile = {
+export const profileData: Profile = {
     name: 'IronName',
     title: '👋 Hey there',
     bio: "I'm a university student interested in Game Dev, and more.",
-    avatar: 'public/avatar.png', // 添加头像文件到 public 目录
+    avatar: 'https://avatar.dogxi.me', // 添加头像文件到 public 目录
     social: [
         {
             id: 'github',
@@ -26,5 +26,5 @@ export const profileData : Profile = {
         },
     ],
     location: '中国',
-    email: 'w526377yu@qq.com',
+    email: 'hi@dogxi.me',
 };

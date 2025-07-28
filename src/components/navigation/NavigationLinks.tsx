@@ -1,6 +1,6 @@
 import React from "react";
-import { NavLink } from "../../types";
-import Icon from "../common/Icon";
+import { NavLink } from "@/types";
+import Icon from "@/components/common/Icon";
 import { motion } from "framer-motion";
 
 interface NavigationLinksProps {

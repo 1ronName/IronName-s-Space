@@ -1,7 +1,7 @@
 import React from "react";
-import { useResponsive } from "../../hooks/useResponsive";
-import ThemeToggle from "../common/ThemeToggle";
-import Footer from "./Footer";
+import { useResponsive } from "@/hooks/useResponsive";
+import ThemeToggle from "@/components/common/ThemeToggle";
+import Footer from "@/components/layout/Footer";
 import { motion } from "framer-motion";
 
 interface MainLayoutProps {

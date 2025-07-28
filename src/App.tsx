@@ -1,24 +1,22 @@
-// src/components/Home.js
 import React, { useEffect } from "react";
-import { motion } from "framer-motion";
-import { useResponsive } from "../hooks/useResponsive";
 import { Helmet } from "react-helmet-async";
-import MainLayout from "./layout/MainLayout";
-import ProfileCard from "./profile/ProfileCard";
-import ProjectsSection from "./projects/ProjectSection";
-import SkillsList from "./skills/SkillList";
-import NavigationLinks from "./navigation/NavigationLinks";
-import { useTheme } from "../contexts/ThemeContext";
+import MainLayout from "@/components/layout/MainLayout";
+import ProfileCard from "@/components/profile/ProfileCard";
+import GithubActivity from "@/components/github/GithubActivity";
+import SkillsList from "@/components/skills/SkillsList";
+import NavigationLinks from "@/components/navigation/NavigationLinks";
+import ProjectsSection from "@/components/projects/ProjectsSection";
+import { useTheme } from "@/contexts/ThemeContext";
 
-import { profileData } from "../data/profile";
-import { projectsData } from "../data/projects";
-import { memosData } from "../data/memos";
-import { skillsData } from "../data/skills";
-import { navigationLinks } from "../data/navigation";
+import { profileData } from "@/data/profile";
+import { projectsData } from "@/data/projects";
+import { memosData } from "@/data/memos";
+import { skillsData } from "@/data/skills";
+import { navigationLinks } from "@/data/navigation";
 
-const Home : React.FC = () => {
-
+const App: React.FC = () => {
   const { theme } = useTheme();
+
   // 确保背景图片预先加载
   useEffect(() => {
     // 预加载背景图和第一个项目图片
@@ -58,7 +56,7 @@ const Home : React.FC = () => {
     checkImageExists("/background-dark.webp");
   }, []);
 
-   // 左侧边栏内容
+  // 左侧边栏内容
   const leftSidebar = (
     <div className="space-y-6">
       <ProfileCard
@@ -67,6 +65,15 @@ const Home : React.FC = () => {
         bio={profileData.bio}
         avatar={profileData.avatar}
         social={profileData.social}
+      />
+
+      <GithubActivity
+        username={
+          profileData.social
+            .find((s) => s.id === "github")
+            ?.url.split("/")
+            .pop() || "github"
+        }
       />
     </div>
   );
@@ -85,66 +92,9 @@ const Home : React.FC = () => {
     </div>
   );
 
-
-  const { width, height, isAbove, isBelow, deviceType } = useResponsive();
-
-  // return (
-  //   <div className="min-h-screen w-full" style={{ position: 'relative', overflow: 'hidden' }}>
-      
-  //     <div className="fixed inset-0 z-[-1] overflow-hidden">
-  //       <div className="absolute inset-0 bg-[#f0f4f8]" style={{ minWidth: '100vw', minHeight: '100vh' }}>
-  //       </div>
-  //     </div>
-
-  //     <div className="min-h-screen px-6 py-8 flex flex-col">
-
-  //       <Navbar />
-
-  //       <div className="grid grid-cols-2 gap-6 flex-grow">
-    
-  //           <section className="space-y-6" style={{opacity: 1}}>
-  //             <div className="space-y-6">
-  //               <motion.div
-  //                 initial={{ opacity: 0 }}
-  //                 animate={{ opacity: 1 }}
-  //                 transition={{ duration: 1 }}
-  //                 className="flex flex-col items-center justify-center min-h-screen bg-gray-100"
-  //               >
-  //                 <div className="bg-white/80 backdrop-blur-lg p-8 rounded-lg shadow-lg">
-  //                   <h1 className="text-4xl font-bold text-center">你好，这里是铁名</h1>
-  //                   <h2 className="text-4xl font-bold text-center">Hello, I'm IronName</h2>
-  //                   <p>是一个一个大学生，对游戏制作，美术，音乐，科技感兴趣</p>
-  //                   <p className="text-center text-gray-600">
-  //                     A university student interested in Game Dev, Art, and Technologies.
-  //                   </p>
-  //                   <p>目标是成为独立制作人</p>
-  //                 </div>
-  //               </motion.div>
-  //             </div>
-  //           </section>
-
-  //           <section className="space-y-6">
-
-  //             <div className="space-y-6">
-  //               <div className="glass-card p-4">
-  //                 <p>啊嘞，这里什么都没有噢</p>
-  //               </div>
-  //             </div>
-              
-  //             <div className="space-y-6">
-  //               <div className="glass-card p-4">
-  //                 <p>啊嘞，这里什么都没有哦</p>
-  //               </div>
-  //             </div>
-
-  //           </section>
-
-  //       </div>
-  //       <Footer />
-  //     </div>
-      
-  //   </div>
-  // );
+  // 确保图片路径正确，移除前导斜杠
+  //   const lightBgPath = "background-light.webp";
+  //   const darkBgPath = "background-dark.webp";
 
   // 确保App容器占满整个视口，但不再使用黑色背景
   return (
@@ -207,8 +157,4 @@ const Home : React.FC = () => {
   );
 };
 
-export default Home;
-
-// min-h-screen px-4 py-6 flex flex-col，
-// min-h-screen px-6 py-8 flex flex-col，
-// min-h-screen p-10 overflow-x-hidden flex flex-col
+export default App;

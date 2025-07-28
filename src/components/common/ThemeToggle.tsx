@@ -1,6 +1,6 @@
 import React from "react";
 import { FiSun, FiMoon } from "react-icons/fi";
-import { useTheme } from "../../contexts/ThemeContext";
+import { useTheme } from "@/contexts/ThemeContext";
 import { motion } from "framer-motion";
 
 const ThemeToggle: React.FC = () => {

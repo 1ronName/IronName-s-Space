@@ -1,7 +1,7 @@
 import React from "react";
-import Card from "../common/Card";
-import { Memo } from "../../types";
-import { formatDate } from "../../utils/formatters";
+import Card from "@/components/common/Card";
+import { Memo } from "@/types";
+import { formatDate } from "@/utils/formatters";
 
 interface MemoCardProps {
   memo: Memo;

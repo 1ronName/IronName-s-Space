@@ -1,4 +1,4 @@
-import { WidgetConfig, WidgetType } from '../types';
+import { WidgetConfig, WidgetType } from '@/types';
 
 export const widgetsConfig: WidgetConfig[] = [
     // 左侧小部件

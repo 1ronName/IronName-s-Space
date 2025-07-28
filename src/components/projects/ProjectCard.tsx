@@ -1,6 +1,6 @@
 import React from "react";
-import Card from "../common/Card";
-import { Project } from "../../types";
+import Card from "@/components/common/Card";
+import { Project } from "@/types";
 import { FiExternalLink, FiGithub } from "react-icons/fi";
 
 interface ProjectCardProps {

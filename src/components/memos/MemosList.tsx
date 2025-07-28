@@ -1,5 +1,5 @@
 import React from "react";
-import { Memo } from "../../types";
+import { Memo } from "@/types";
 import MemoCard from "./MemoCard";
 
 interface MemosListProps {

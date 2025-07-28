@@ -1,11 +1,11 @@
 import React, { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import ButtonGroup from "../common/ButtonGroup";
-import Button from "../common/Button";
-import ProjectsList from "../projects/ProjectsList";
-import MemosList from "../memos/MemosList";
+import ButtonGroup from "@/components/common/ButtonGroup";
+import Button from "@/components/common/Button";
+import ProjectsList from "@/components/projects/ProjectsList";
+import MemosList from "@/components/memos/MemosList";
 // import ScrollArrow from "@/components/common/ScrollArrow";
-import { Project, Memo } from "../../types";
+import { Project, Memo } from "@/types";
 import { FiFolder, FiFileText, FiChevronDown } from "react-icons/fi";
 
 interface ProjectsSectionProps {

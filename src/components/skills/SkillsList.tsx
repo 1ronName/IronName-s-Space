@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import ButtonGroup from "../common/ButtonGroup";
-import Button from "../common/Button";
-import { Skill } from "../../types";
+import ButtonGroup from "@/components/common/ButtonGroup";
+import Button from "@/components/common/Button";
+import { Skill } from "@/types";
 import { motion } from "framer-motion";
-import Icon from "../common/Icon";
+import Icon from "@/components/common/Icon";
 import { FiCode, FiServer, FiFeather } from "react-icons/fi";
 
 interface SkillsListProps {
