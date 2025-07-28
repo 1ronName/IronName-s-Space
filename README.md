@@ -1,3 +1,4 @@
+Thank you, Dogxi!
 # MyCard - 极简 风格个人主页
 
 一个采用 极简 设计风格的现代化个人主页网站，使用 React、TypeScript 和 Tailwind CSS 构建。
