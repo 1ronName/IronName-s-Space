@@ -1,8 +1,7 @@
-/* @tailwind base;
+@tailwind base;
 @tailwind components;
-@tailwind utilities; */
-@import "tailwindcss/preflight";
-@import "tailwindcss/utilities";
+@tailwind utilities;
+/* @import "tailwindcss"; */
 
 @layer base {
   /* 优化全局滚动和背景设置，但移除黑色背景 */

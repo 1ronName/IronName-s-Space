@@ -2,8 +2,6 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { useResponsive } from "../hooks/useResponsive";
-import Navbar from "./Navbar"; // 引入导航栏组件
-import Footer from "./Footer";
 import { Helmet } from "react-helmet-async";
 import MainLayout from "./layout/MainLayout";
 import ProfileCard from "./profile/ProfileCard";
