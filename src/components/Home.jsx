@@ -7,10 +7,10 @@ import Footer from "./Footer";
 
 const Home = () => {
   return (
-    <div class="min-h-screen w-full" style="position: relative; overflow: hidden;">
+    <div className="min-h-screen w-full" style="position: relative; overflow: hidden;">
       
-      <div class="fixed inset-0 z-[-1] overflow-hidden">
-        <div class="absolute inset-0 bg-[#f0f4f8]" style="min-width: 100vw; min-height: 100vh;">
+      <div className="fixed inset-0 z-[-1] overflow-hidden">
+        <div className="absolute inset-0 bg-[#f0f4f8]" style="min-width: 100vw; min-height: 100vh;">
         </div>
       </div>
 

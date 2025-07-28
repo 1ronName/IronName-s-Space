@@ -6,7 +6,7 @@ import { SpeedInsights } from "@vercel/speed-insights/react"
 const Navbar = () => {
   return (
     <header 
-          class="flex justify-between 
+          className="flex justify-between 
             items-center sticky top-0 z-10 py-2 px-4 
             bg-white/10 dark:bg-black/15 backdrop-blur-md rounded-full"
       >
@@ -22,7 +22,7 @@ const Navbar = () => {
           </div>
         </nav>
         <button aria-label="切换到深色模式" 
-          class="w-8 h-8 rounded-full flex items-center justify-center text-gray-700 
+          className="w-8 h-8 rounded-full flex items-center justify-center text-gray-700 
           dark:text-gray-200 bg-white/10 dark:bg-white/5 hover:bg-white/20 
           dark:hover:bg-white/10 backdrop-blur-sm" tabindex="0" 
           style="transform: none;"
