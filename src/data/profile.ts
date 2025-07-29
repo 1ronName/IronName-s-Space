@@ -2,9 +2,9 @@ import { Profile } from '@/types';
 
 export const profileData: Profile = {
     name: 'IronName',
-    title: '👋 Hey there',
-    bio: "I'm a university student interested in Game Dev, and more.",
-    avatar: 'https://avatar.dogxi.me', // 添加头像文件到 public 目录
+    title: '是一个一个大学生，对游戏开发感兴趣，还有其他有意思的东西。',
+    bio: "目标是成为独立制作人！(大概不止游戏？",
+    avatar: '/public/images/avatar.png', 
     social: [
         {
             id: 'github',

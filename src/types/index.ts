@@ -26,7 +26,8 @@ export interface Project {
 export interface Skill {
     id: string;
     name: string;
-    category: 'frontend' | 'backend' | 'design' | 'other';
+    // category: 'frontend' | 'backend' | 'design' | 'other';
+    category: 'code' | 'gamedesign' | 'other';
     level: number; // 1-5
     icon?: string;
 }

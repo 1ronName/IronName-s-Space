@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import MainLayout from "@/components/layout/MainLayout";
 import ProfileCard from "@/components/profile/ProfileCard";
-import GithubActivity from "@/components/github/GithubActivity";
+// import GithubActivity from "@/components/github/GithubActivity";
 import SkillsList from "@/components/skills/SkillsList";
 import NavigationLinks from "@/components/navigation/NavigationLinks";
 import ProjectsSection from "@/components/projects/ProjectsSection";
@@ -22,7 +22,7 @@ const App: React.FC = () => {
     // 预加载背景图和第一个项目图片
     const preloadImages = [
       // "/background-light.webp",
-      "/background-dark.webp",
+      "/暮色alpha.png",
       projectsData[0]?.imageUrl,
     ].filter(Boolean);
 
@@ -67,14 +67,14 @@ const App: React.FC = () => {
         social={profileData.social}
       />
 
-      <GithubActivity
+      {/* <GithubActivity
         username={
           profileData.social
             .find((s) => s.id === "github")
             ?.url.split("/")
             .pop() || "github"
         }
-      />
+      /> */}
     </div>
   );
 
@@ -108,7 +108,7 @@ const App: React.FC = () => {
       <Helmet>
         <title>{profileData.name} - 个人主页</title>
         <meta name="description" content={profileData.bio} />
-        <meta name="keywords" content="Dogxi, 个人主页, 开发者, 作品集" />
+        <meta name="keywords" content="IronName, 个人主页, 开发者, 作品集" />
         {/* 添加视口设置，优化移动体验 */}
         <meta
           name="viewport"
@@ -123,9 +123,10 @@ const App: React.FC = () => {
 
       {/* 背景: 深色模式使用图片，浅色模式使用背景色 */}
       <div className="fixed inset-0 z-[-1] overflow-hidden">
-        {theme === "dark" ? (
+        {theme === "dark" ? 
+        (
           <img
-            src="background-dark.webp"
+            src="IMG20240721193632-2.jpg"
             alt=""
             className="absolute w-[120%] h-[120%] object-cover"
             style={{
@@ -145,7 +146,8 @@ const App: React.FC = () => {
               minHeight: "100vh",
             }}
           />
-        )}
+        )
+        }
       </div>
 
       <MainLayout

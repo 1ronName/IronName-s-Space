@@ -11,14 +11,14 @@ interface SkillsListProps {
   showTitle?: boolean;
 }
 
-type FilterCategory = "frontend" | "backend" | "design" | "other";
+type FilterCategory = 'code' | 'gamedesign' | 'other';
 
 const SkillsList: React.FC<SkillsListProps> = ({
   skills,
   showTitle = true,
 }) => {
-  // 默认显示前端技能
-  const [category, setCategory] = useState<FilterCategory>("frontend");
+  // 默认显示游戏设计技能
+  const [category, setCategory] = useState<FilterCategory>("gamedesign");
 
   // 按类别过滤技能
   const filteredSkills = skills.filter((skill) => skill.category === category);
@@ -33,28 +33,28 @@ const SkillsList: React.FC<SkillsListProps> = ({
           <h2 className="text-lg font-medium">技能</h2>
           <ButtonGroup>
             <Button
-              isActive={category === "frontend"}
-              onClick={() => setCategory("frontend")}
-              ariaLabel="前端技能"
-              tooltip="前端"
+              isActive={category === "gamedesign"}
+              onClick={() => setCategory("gamedesign")}
+              ariaLabel="游戏设计"
+              tooltip="游戏设计"
+            >
+              <FiFeather />
+            </Button>
+            <Button
+              isActive={category === "code"}
+              onClick={() => setCategory("code")}
+              ariaLabel="编程技能"
+              tooltip="编程"
             >
               <FiCode />
             </Button>
             <Button
-              isActive={category === "backend"}
-              onClick={() => setCategory("backend")}
-              ariaLabel="后端技能"
-              tooltip="后端"
+              isActive={category === "other"}
+              onClick={() => setCategory("other")}
+              ariaLabel="其他技能"
+              tooltip="其他"
             >
               <FiServer />
-            </Button>
-            <Button
-              isActive={category === "design"}
-              onClick={() => setCategory("design")}
-              ariaLabel="设计技能"
-              tooltip="设计"
-            >
-              <FiFeather />
             </Button>
           </ButtonGroup>
         </div>

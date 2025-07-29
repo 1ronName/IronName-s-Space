@@ -12,30 +12,34 @@ import {
   FiStar,
   FiCode,
   FiServer,
+  FiSearch,
   FiFeather,
   FiTool,
   FiFolder,
   FiEdit,
   FiSun,
   FiMoon,
+  FiMusic,
   FiVideo,
+  FiHeadphones,
 } from "react-icons/fi";
 import {
   FaReact,
-  FaNodeJs,
-  FaGitAlt,
-  FaDocker,
   FaFigma,
-  FaCss3Alt,
+  FaGamepad,
+  FaPaintBrush,
+  FaCube,
+  FaMusic,
+
 } from "react-icons/fa";
 import {
-  SiTypescript,
-  SiJavascript,
-  SiTailwindcss,
-  SiNextdotjs,
   SiExpress,
   SiMongodb,
   SiAdobephotoshop,
+  SiGodotengine,
+  SiC,
+  SiPython,
+
 } from "react-icons/si";
 import { MdDesignServices } from "react-icons/md";
 
@@ -55,30 +59,29 @@ const IconMap: Record<string, React.ComponentType<any>> = {
   FiStar,
   FiCode,
   FiServer,
+  FiSearch,
   FiFeather,
   FiTool,
   FiFolder,
   FiEdit,
   FiSun,
   FiMoon,
-
+  FiMusic,
+  FiHeadphones,
   // Font Awesome 图标
   FaReact,
-  FaNodeJs,
-  FaGitAlt,
-  FaDocker,
   FaFigma,
-  FaCss3Alt,
-
+  FaGamepad,
+  FaPaintBrush,
+  FaCube,
+  FaMusic,
   // Simple Icons
-  SiTypescript,
-  SiJavascript,
-  SiTailwindcss,
-  SiNextdotjs,
   SiExpress,
   SiMongodb,
   SiAdobephotoshop,
-
+  SiGodotengine,
+  SiC,
+  SiPython,
   // Material Design 图标
   MdDesignServices,
 };

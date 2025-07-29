@@ -1,109 +1,94 @@
 import { Skill } from '@/types';
 
 export const skillsData: Skill[] = [
-    // 前端技能
+    // 游戏制作技能
     {
-        id: 'react',
-        name: 'React',
-        category: 'frontend',
-        level: 4,
+        id: 'gameplay',
+        name: '玩法设计',
+        category: 'gamedesign',
+        level: 1,
+        icon: 'FaGamepad',
+    },
+    {
+        id: 'story',
+        name: '故事设计',
+        category: 'gamedesign',
+        level: 1,
+        icon: 'FiEdit',
+    },
+    {
+        id: 'art2d',
+        name: '2D美术',
+        category: 'gamedesign',
+        level: 1,
+        icon: 'FaPaintBrush',
+    },
+    {
+        id: 'art3d',
+        name: '3D美术',
+        category: 'gamedesign',
+        level: 0,
+        icon: 'FaCube',
+    },
+    {
+        id: 'music',
+        name: '音乐',
+        category: 'gamedesign',
+        level: 0,
+        icon: 'FiMusic',
+    },
+    {
+        id: 'sfx',
+        name: '音效设计',
+        category: 'gamedesign',
+        level: 0,
+        icon: 'FiHeadphones',
+    },
+
+    // 编程技能
+    {
+        id: 'gdscript',
+        name: 'GDscript',
+        category: 'code',
+        level: 3,
+        icon: 'SiGodotengine',
+    },
+    {
+        id: 'c/cpp',
+        name: 'C/CPP',
+        category: 'code',
+        level: 3,
+        icon: 'SiC',
+    },
+    {
+        id: 'python',
+        name: 'Python',
+        category: 'code',
+        level: 2,
+        icon: 'SiPython',
+    },
+    {
+        id: 'frontend',
+        name: '网站搭建',
+        category: 'code',
+        level: 1,
         icon: 'FaReact',
     },
-    {
-        id: 'typescript',
-        name: 'TypeScript',
-        category: 'frontend',
-        level: 4,
-        icon: 'SiTypescript',
-    },
-    {
-        id: 'javascript',
-        name: 'JavaScript',
-        category: 'frontend',
-        level: 4,
-        icon: 'SiJavascript',
-    },
-    {
-        id: 'css',
-        name: 'CSS/Sass',
-        category: 'frontend',
-        level: 4,
-        icon: 'FaCss3Alt',
-    },
-    {
-        id: 'tailwind',
-        name: 'Tailwind CSS',
-        category: 'frontend',
-        level: 4,
-        icon: 'SiTailwindcss',
-    },
-    {
-        id: 'nextjs',
-        name: 'Next.js',
-        category: 'frontend',
-        level: 4,
-        icon: 'SiNextdotjs',
-    },
 
-    // 后端技能
-    {
-        id: 'nodejs',
-        name: 'Node.js',
-        category: 'backend',
-        level: 3,
-        icon: 'FaNodeJs',
-    },
-    {
-        id: 'express',
-        name: 'Express',
-        category: 'backend',
-        level: 3,
-        icon: 'SiExpress',
-    },
-    {
-        id: 'mongodb',
-        name: 'MongoDB',
-        category: 'backend',
-        level: 3,
-        icon: 'SiMongodb',
-    },
-
-    // 设计技能
-    {
-        id: 'figma',
-        name: 'Figma',
-        category: 'design',
-        level: 4,
-        icon: 'FaFigma',
-    },
-    {
-        id: 'photoshop',
-        name: 'Photoshop',
-        category: 'design',
-        level: 3,
-        icon: 'SiAdobephotoshop',
-    },
-    {
-        id: 'ui-design',
-        name: 'UI 设计',
-        category: 'design',
-        level: 4,
-        icon: 'MdDesignServices',
-    },
 
     // 其他技能
     {
-        id: 'git',
-        name: 'Git',
+        id: 'videomake',
+        name: '视频制作',
         category: 'other',
         level: 4,
-        icon: 'FaGitAlt',
+        icon: 'FiVideo',
     },
     {
-        id: 'docker',
-        name: 'Docker',
+        id: 'search',
+        name: '搜索',
         category: 'other',
-        level: 3,
-        icon: 'FaDocker',
+        level: 4,
+        icon: 'FiSearch',
     },
 ];

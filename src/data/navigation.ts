@@ -11,24 +11,24 @@ export const navigationLinks: NavLink[] = [
     {
         id: 'blog',
         name: '博客',
-        url: 'https://blog.dogxi.me',
+        url: 'https://blog.ironname.top',
         icon: 'FiEdit',
         isExternal: true,
     },
     {
         id: 'projects',
         name: '项目',
-        url: 'https://github.com/dogxii?tab=repositories&sort=stargazers',
+        url: 'https://github.com/1ronName?tab=repositories&sort=stargazers',
         icon: 'FiFolder',
         isExternal: true,
     },
-    {
-        id: 'about',
-        name: '关于',
-        url: 'https://dogxi.notion.site/',
-        icon: 'FiUser',
-        isExternal: true,
-    },
+    // {
+    //     id: 'about',
+    //     name: '关于',
+    //     url: 'https://dogxi.notion.site/',
+    //     icon: 'FiUser',
+    //     isExternal: true,
+    // },
     {
         id: 'contact',
         name: '联系',
@@ -39,7 +39,7 @@ export const navigationLinks: NavLink[] = [
     {
         id: 'github',
         name: 'GitHub',
-        url: 'https://github.com/dogxii',
+        url: 'https://github.com/1ronName',
         icon: 'FiGithub',
         isExternal: true,
     },
