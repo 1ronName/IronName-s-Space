@@ -75,10 +75,11 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
             whileTap={{ scale: 0.9 }}
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.4 + index * 0.1, duration: 0.2 }}
+            transition={{ delay: 0.2 + index * 0.1, duration: 0.2 }}
             aria-label={link.name}
+            title= {link.tooltip}
           >
-            <Icon name={link.icon} size={16} />
+          <Icon name={link.icon} size={16} />
           </motion.a>
         ))}
       </motion.div>

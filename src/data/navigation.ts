@@ -17,7 +17,7 @@ export const navigationLinks: NavLink[] = [
     },
     {
         id: 'projects',
-        name: '项目',
+        name: 'Github项目',
         url: 'https://github.com/1ronName?tab=repositories&sort=stargazers',
         icon: 'FiFolder',
         isExternal: true,
@@ -29,18 +29,11 @@ export const navigationLinks: NavLink[] = [
     //     icon: 'FiUser',
     //     isExternal: true,
     // },
-    {
-        id: 'contact',
-        name: '联系',
-        url: 'mailto:hi@dogxi.me',
-        icon: 'FiMail',
-        isExternal: true,
-    },
-    {
-        id: 'github',
-        name: 'GitHub',
-        url: 'https://github.com/1ronName',
-        icon: 'FiGithub',
-        isExternal: true,
-    },
+    // {
+    //     id: 'github',
+    //     name: 'GitHub',
+    //     url: 'https://github.com/1ronName',
+    //     icon: 'FiGithub',
+    //     isExternal: true,
+    // },
 ];

@@ -11,20 +11,23 @@ export const profileData: Profile = {
             name: 'GitHub',
             url: 'https://github.com/1ronName',
             icon: 'FiGithub',
+            tooltip: 'Github主页'
         },
         {
             id: 'bilibili',
             name: 'Bilibili',
             url: 'https://space.bilibili.com/57447177',
             icon: 'FiVideo',
+            tooltip: 'bilibili主页'
         },
         {
             id: 'email',
             name: 'Email',
             url: 'mailto:w526377yu@qq.com',
             icon: 'FiMail',
+            tooltip: '发送邮件'
         },
     ],
     location: '中国',
-    email: 'hi@dogxi.me',
+    email: 'w526377yu@qq.com',
 };

@@ -4,6 +4,7 @@ export interface SocialLink {
     name: string;
     url: string;
     icon: string; // 图标组件名称
+    tooltip: string;
 }
 
 // 项目类型

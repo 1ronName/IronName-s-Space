@@ -38,7 +38,7 @@ const SkillsList: React.FC<SkillsListProps> = ({
               ariaLabel="游戏设计"
               tooltip="游戏设计"
             >
-              <FiFeather />
+             <FiFeather />
             </Button>
             <Button
               isActive={category === "code"}
