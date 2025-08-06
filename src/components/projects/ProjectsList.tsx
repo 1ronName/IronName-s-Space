@@ -18,7 +18,7 @@ const ProjectsList: React.FC<ProjectsListProps> = ({
 
   return (
     <div className="space-y-4">
-      {showTitle && <h2 className="text-xl font-medium">项目展示</h2>}
+      {showTitle && <h2 className="text-xl font-medium">项目</h2>}
 
       <div className="space-y-4">
         {projects.map((project, index) => (

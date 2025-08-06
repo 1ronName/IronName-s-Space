@@ -51,3 +51,30 @@ export function formatRelativeTime(dateString: string): string {
     const diffInYears = Math.floor(diffInMonths / 12);
     return `${diffInYears} 年前`;
 }
+
+export function formatRelativeDate(dateString: string): string {
+    const date = new Date(dateString);
+    const now = new Date();
+    const diffInSeconds = Math.floor((now.getTime() - date.getTime()) / 1000);
+
+    const diffInMinutes = Math.floor(diffInSeconds / 60);
+
+    const diffInHours = Math.floor(diffInMinutes / 60);
+
+    if (diffInHours < 24) {
+        return `不到 1 天`;
+    }
+
+    const diffInDays = Math.floor(diffInHours / 24);
+    if (diffInDays < 30) {
+        return `${diffInDays} 天前`;
+    }
+
+    const diffInMonths = Math.floor(diffInDays / 30);
+    if (diffInMonths < 12) {
+        return `${diffInMonths} 个月前`;
+    }
+
+    const diffInYears = Math.floor(diffInMonths / 12);
+    return `${diffInYears} 年前`;
+}

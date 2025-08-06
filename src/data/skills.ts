@@ -6,7 +6,7 @@ export const skillsData: Skill[] = [
         id: 'gameplay',
         name: '玩法设计',
         category: 'gamedesign',
-        level: 1,
+        level: 2,
         icon: 'FaGamepad',
     },
     {
@@ -41,7 +41,7 @@ export const skillsData: Skill[] = [
         id: 'sfx',
         name: '音效设计',
         category: 'gamedesign',
-        level: 0,
+        level: 1,
         icon: 'FiHeadphones',
     },
 

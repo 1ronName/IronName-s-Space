@@ -18,6 +18,7 @@ export interface Project {
         demo?: string;
         source?: string;
         article?: string;
+        video?:string;
     };
     featured: boolean;
     date: string;

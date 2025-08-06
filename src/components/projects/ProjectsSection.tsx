@@ -71,14 +71,14 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({
               {contentType === "projects" && (
                 <ProjectsList
                   projects={projects}
-                  showTitle={false}
+                  showTitle={true}
                   // 始终使用列表模式，不提供切换选项
                   forceListMode={true}
                 />
               )}
 
               {contentType === "memos" && (
-                <MemosList memos={memos} showTitle={false} />
+                <MemosList memos={memos} showTitle={true} />
               )}
             </motion.div>
           </AnimatePresence>

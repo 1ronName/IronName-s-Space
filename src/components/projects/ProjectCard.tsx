@@ -1,7 +1,8 @@
 import React from "react";
 import Card from "@/components/common/Card";
 import { Project } from "@/types";
-import { FiExternalLink, FiGithub } from "react-icons/fi";
+import { FiExternalLink, FiGithub, FiVideo } from "react-icons/fi";
+import { formatRelativeDate } from "@/utils/formatters";
 
 interface ProjectCardProps {
   project: Project;
@@ -14,7 +15,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   //   layout,
   delay,
 }) => {
-  const { title, description, imageUrl, tags, links, featured } = project;
+  const { title, description, imageUrl, tags, links, featured,date } = project;
 
   // 始终使用列表布局，并优化性能
   return (
@@ -38,7 +39,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       <div className="flex-grow">
         <div className="flex items-center justify-between mb-2">
           <h3 className="font-medium">{title}</h3>
-          {featured && <span className="visionpro-tag text-primary">精选</span>}
+          {featured && <span className="visionpro-tag text-primary">这个好！</span>}
         </div>
 
         <p className="text-sm text-text-light-secondary dark:text-text-dark-secondary mb-3 line-clamp-2">
@@ -65,7 +66,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               className="flex items-center text-xs"
             >
               <FiExternalLink className="mr-1" size={12} />
-              预览
+              前往查看
             </a>
           )}
 
@@ -80,7 +81,25 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               源码
             </a>
           )}
+
+          {links.video && (
+            <a
+              href={links.video}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center text-xs"
+            >
+              <FiVideo className="mr-1" size={12} />
+              视频
+            </a>
+          )}
+
+          <p className="ml-auto text-right text-sm text-text-light-secondary dark:text-text-dark-secondary mb-2">
+              {formatRelativeDate(date)}
+          </p>
+
         </div>
+
       </div>
     </Card>
   );

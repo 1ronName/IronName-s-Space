@@ -22,7 +22,7 @@ const App: React.FC = () => {
     // 预加载背景图和第一个项目图片
     const preloadImages = [
       // "/background-light.webp",
-      "/暮色alpha.png",
+      "/images/IMG20240721193632-2.jpg",
       projectsData[0]?.imageUrl,
     ].filter(Boolean);
 
@@ -32,6 +32,7 @@ const App: React.FC = () => {
         img.src = url;
       }
     });
+
   }, []);
 
   // 添加调试函数，检查图片是否可访问
@@ -52,8 +53,8 @@ const App: React.FC = () => {
     };
 
     // 检查背景图片
-    checkImageExists("/background-light.webp");
-    checkImageExists("/background-dark.webp");
+    // checkImageExists("/background-light.webp");
+    checkImageExists("/images/IMG20240721193632-2.jpg");
   }, []);
 
   // 左侧边栏内容
@@ -105,10 +106,11 @@ const App: React.FC = () => {
         overflow: "hidden",
       }}
     >
+
       <Helmet>
-        <title>{profileData.name} - 个人主页</title>
+        <title>{profileData.name} | 空间</title>
         <meta name="description" content={profileData.bio} />
-        <meta name="keywords" content="IronName, 个人主页, 开发者, 作品集" />
+        <meta name="keywords" content="IronName, 个人主页, 游戏设计开发," />
         {/* 添加视口设置，优化移动体验 */}
         <meta
           name="viewport"
@@ -126,7 +128,7 @@ const App: React.FC = () => {
         {theme === "dark" ? 
         (
           <img
-            src="IMG20240721193632-2.jpg"
+            src="/images/IMG20240721193632-2.jpg"
             alt=""
             className="absolute w-[120%] h-[120%] object-cover"
             style={{

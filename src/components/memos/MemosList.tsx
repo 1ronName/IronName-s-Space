@@ -15,7 +15,7 @@ const MemosList: React.FC<MemosListProps> = ({ memos, showTitle = true }) => {
 
   return (
     <div className="space-y-4">
-      {showTitle && <h2 className="text-xl font-medium">备忘录</h2>}
+      {showTitle && <h2 className="text-xl font-medium">碎碎念</h2>}
 
       <div className="space-y-4">
         {sortedMemos.map((memo, index) => (

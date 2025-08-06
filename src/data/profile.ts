@@ -7,13 +7,6 @@ export const profileData: Profile = {
     avatar: 'images/avatar.png', 
     social: [
         {
-            id: 'github',
-            name: 'GitHub',
-            url: 'https://github.com/1ronName',
-            icon: 'FiGithub',
-            tooltip: 'Github主页'
-        },
-        {
             id: 'bilibili',
             name: 'Bilibili',
             url: 'https://space.bilibili.com/57447177',
