@@ -7,9 +7,9 @@ export const projectsData: Project[] = [
     {
         id: 'photon loop',
         title: 'Photon Loop',
-        description: '参加GMTK GameJam 2025的作品，也是我做的第三个游戏作品。个人4天内完成',
+        description: '基于Godot物理的解密游戏，第三个游戏作品，个人4天内完成',
         imageUrl: 'images/projects/photon loop.png',
-        tags: ['游戏','GameJam'],
+        tags: ['游戏','GMTK GameJam 2025'],
         links: {
             demo: 'https://ironname.itch.io/photon-loop',
             video: '/'
@@ -34,9 +34,9 @@ export const projectsData: Project[] = [
     {
         id: 'watch your step',
         title: '小心脚下(Watch Your Step)',
-        description: '参加萌芽Gamejam2025；第二个游戏作品。个人10天内完成。',
+        description: '以视觉受限为核心体验，并不好玩。第二个游戏作品，10天内独自完成。',
         imageUrl: 'images/projects/小心脚下封面.png',
-        tags: ['游戏','GameJam'],
+        tags: ['游戏','2025萌芽Gamejam'],
         links: {
             demo: 'https://ironname.itch.io/watch-your-step',
             video: 'https://www.bilibili.com/video/BV1zXZFYSE1N'
@@ -48,9 +48,9 @@ export const projectsData: Project[] = [
     {
         id: 'collapsed dream',
         title: '破碎梦境(Collapsed Dream)',
-        description: '参加吉比特Gamejam2024的作品，是我做的第一个游戏作品。组员还有 美术叶，关卡设计吴。测试张',
+        description: '物理，平台跳跃，第一个游戏作品。组员还有 美术叶，关卡设计吴。测试张',
         imageUrl: 'images/projects/破碎梦境封面.png',
-        tags: ['游戏','GameJam'],
+        tags: ['游戏','2024吉比特高校GameJam'],
         links: {
             demo: 'https://ironname.itch.io/collapseddream',
             video: 'https://www.bilibili.com/video/BV1S8ZFYvEiX'

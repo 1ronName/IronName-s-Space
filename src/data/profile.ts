@@ -8,21 +8,21 @@ export const profileData: Profile = {
     social: [
         {
             id: 'bilibili',
-            username: '@铁名_IronName',
+            username: '铁名_IronName',
             url: 'https://space.bilibili.com/57447177',
             icon: 'SiBilibili',
             tooltip: 'bilibili'
         },
         {
             id: 'rednote',
-            username: '@铁名_IronName',
+            username: '铁名_IronName',
             url: 'https://space.bilibili.com/57447177',
             icon: 'SiXiaohongshu',
             tooltip: '小红书'
         },
         {
             id: 'wechat',
-            username: '@GameDev之旅',
+            username: 'GameDev之旅',
             url: '/',
             icon: 'SiWechat',
             tooltip: '微信公众号'

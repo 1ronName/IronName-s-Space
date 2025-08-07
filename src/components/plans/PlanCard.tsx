@@ -20,9 +20,9 @@ const PlanCard: React.FC<PlanCardProps> = ({
       <div
         key={i}
         className={`w-3 h-3 rounded-full ${
-          i < progress/5 ? "bg-primary breathing-blue" : "bg-gray-300 dark:bg-gray-600"
+          i < progress/5 ? "bg-primary breathing-blue" : "bg-gray-300 dark:bg-gray-600 "
         }`}
-        style={{ animationDelay: `${i * 0.2}s` }} 
+        style={{ animationDelay: `${i * 0.1}s` }} 
       />
     ));
 

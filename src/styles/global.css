@@ -228,10 +228,23 @@
     background-color: #0ea5e9; /* 初始颜色 */
   }
   50% {
-    background-color: #9df8ff; /* 较深的颜色 #007bff*/
+    background-color: #beff9d93; /* 较深的颜色 #007bff*/
   }
 }
 
 .breathing-blue {
-  animation: breathing-blue 4s infinite ease-in-out; /* 应用动画 */
+  animation: breathing-blue 3s infinite ease-in-out; /* 应用动画 */
+}
+
+@keyframes breathing-gray {
+  0%, 100% {
+    background-color: #d1d5db; 
+  }
+  50% {
+    background-color: #4b5563; 
+  }
+}
+
+.breathing-gray {
+  animation: breathing-gray 3s infinite ease-in-out; /* 应用动画 */
 }
