@@ -33,12 +33,15 @@ import {
 
 } from "react-icons/fa";
 import {
+  SiBilibili,
+  SiItchdotio,
   SiExpress,
   SiMongodb,
   SiAdobephotoshop,
   SiGodotengine,
   SiC,
   SiPython,
+  SiXiaohongshu,
 
 } from "react-icons/si";
 import { MdDesignServices } from "react-icons/md";
@@ -76,12 +79,16 @@ const IconMap: Record<string, React.ComponentType<any>> = {
   FaCube,
   FaMusic,
   // Simple Icons
+  SiBilibili,
+  SiItchdotio,
   SiExpress,
   SiMongodb,
   SiAdobephotoshop,
   SiGodotengine,
   SiC,
   SiPython,
+  SiXiaohongshu,
+  
   // Material Design 图标
   MdDesignServices,
 };

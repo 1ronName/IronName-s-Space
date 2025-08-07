@@ -1,7 +1,15 @@
+//计划类型
+export interface Plan {
+    id:string;
+    title: string;
+    description: string;
+    progress: number;
+}
+
 // 社交媒体链接类型
 export interface SocialLink {
     id: string;
-    name: string;
+    username: string;
     url: string;
     icon: string; // 图标组件名称
     tooltip: string;

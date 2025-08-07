@@ -59,29 +59,44 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
       </motion.p>
 
       <motion.div
-        className="flex space-x-3"
+        className="flex-col"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.4, duration: 0.4 }}
       >
+
         {social.map((link, index) => (
-          <motion.a
+          <div className="flex">
+
+          <motion.div
             key={link.id}
-            href={link.url}
-            target="_blank"
             rel="noopener noreferrer"
             className="bg-white/10 dark:bg-white/5 backdrop-blur-sm w-9 h-9 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300"
-            whileHover={{ scale: 1.1, rotate: 5 }}
-            whileTap={{ scale: 0.9 }}
+            // whileHover={{ scale: 1.1, rotate: 5 }}
+            // whileTap={{ scale: 0.9 }}
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.2 + index * 0.1, duration: 0.2 }}
-            aria-label={link.name}
+            // aria-label={link.name}
             title= {link.tooltip}
           >
-          <Icon name={link.icon} size={16} />
-          </motion.a>
+
+          <Icon name={link.icon} size={20} />
+          </motion.div>
+
+
+          <motion.p
+            className="text-sm text-text-light-secondary dark:text-text-dark-secondary mb-6 max-w-xs align-text-bottom"
+            initial={{ opacity: 0, y : 0}}
+            animate={{ opacity: 1, y : 8}}
+            transition={{ delay: 0.3, duration: 0.4 }}
+          >
+          {link.username}
+          </motion.p>
+
+          </div>
         ))}
+
       </motion.div>
     </Card>
   );

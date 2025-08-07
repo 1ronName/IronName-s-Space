@@ -1,7 +1,8 @@
 import React from "react";
 import Card from "@/components/common/Card";
 import { Project } from "@/types";
-import { FiExternalLink, FiGithub, FiVideo } from "react-icons/fi";
+import { FiExternalLink, FiGithub} from "react-icons/fi";
+import { AiOutlinePlaySquare } from "react-icons/ai";
 import { formatRelativeDate } from "@/utils/formatters";
 
 interface ProjectCardProps {
@@ -89,7 +90,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               rel="noopener noreferrer"
               className="flex items-center text-xs"
             >
-              <FiVideo className="mr-1" size={12} />
+              <AiOutlinePlaySquare className="mr-1" size={12} />
               视频
             </a>
           )}

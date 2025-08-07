@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import MainLayout from "@/components/layout/MainLayout";
 import ProfileCard from "@/components/profile/ProfileCard";
+import PlansList from "@/components/plans/PlansList"
 // import GithubActivity from "@/components/github/GithubActivity";
 import SkillsList from "@/components/skills/SkillsList";
 import NavigationLinks from "@/components/navigation/NavigationLinks";
@@ -11,6 +12,7 @@ import { useTheme } from "@/contexts/ThemeContext";
 import { profileData } from "@/data/profile";
 import { projectsData } from "@/data/projects";
 import { memosData } from "@/data/memos";
+import { plansData } from "@/data/plans";
 import { skillsData } from "@/data/skills";
 import { navigationLinks } from "@/data/navigation";
 
@@ -68,6 +70,8 @@ const App: React.FC = () => {
         social={profileData.social}
       />
 
+      <PlansList plans={plansData}/>
+
       {/* <GithubActivity
         username={
           profileData.social
@@ -76,6 +80,7 @@ const App: React.FC = () => {
             .pop() || "github"
         }
       /> */}
+
     </div>
   );
 

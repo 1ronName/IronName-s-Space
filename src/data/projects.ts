@@ -20,12 +20,11 @@ export const projectsData: Project[] = [
     
     {
         id: 'myspace',
-        title: 'My Space',
+        title: 'My Space 个人网站',
         description: '效仿dogxi建的个人网站（解决不了环境配置就直接拿大佬的源码部署的）',
         // imageUrl: '/projects/mycard.jpg',
         tags: ['网站'],
         links: {
-            demo: '/',
             source: 'https://github.com/1ronName/IronName-s-Space',
         },
         featured: false,

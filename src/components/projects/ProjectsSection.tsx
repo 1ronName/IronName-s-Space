@@ -6,7 +6,8 @@ import ProjectsList from "@/components/projects/ProjectsList";
 import MemosList from "@/components/memos/MemosList";
 // import ScrollArrow from "@/components/common/ScrollArrow";
 import { Project, Memo } from "@/types";
-import { FiFolder, FiFileText, FiChevronDown } from "react-icons/fi";
+import { FiFolder, FiChevronDown } from "react-icons/fi";
+import { BiMessageDetail } from "react-icons/bi";
 
 interface ProjectsSectionProps {
   projects: Project[];
@@ -44,10 +45,10 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({
           <Button
             isActive={contentType === "memos"}
             onClick={() => setContentType("memos")}
-            ariaLabel="备忘录"
-            tooltip="备忘录"
+            ariaLabel="碎碎念"
+            tooltip="碎碎念"
           >
-            <FiFileText />
+            <BiMessageDetail />
           </Button>
         </ButtonGroup>
       </div>
@@ -86,7 +87,7 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({
 
         {/* 移除蓝色圆形背景，只保留箭头图标 */}
         <div
-          className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-50 flex items-center justify-center animate-bounce"
+          className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-50 flex items-center justify-center animate-bounce "
           style={{
             display:
               containerRef.current &&
@@ -100,7 +101,11 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({
                 : "none",
           }}
         >
-          <FiChevronDown size={24} className="text-white/70" />
+          
+          <div className="bg-primary rounded-full p-1 shadow-md"
+          >
+          <FiChevronDown size={24} className="text-white/80" />
+          </div>
         </div>
       </div>
     </div>

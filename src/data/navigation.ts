@@ -13,7 +13,7 @@ export const navigationLinks: NavLink[] = [
         id: 'itch.io',
         name: 'itch.io主页',
         url: 'https://ironname.itch.io/',
-        icon: 'FaGamepad',
+        icon: 'SiItchdotio',
         isExternal: true,
     },
 
@@ -21,22 +21,22 @@ export const navigationLinks: NavLink[] = [
         id: 'bilibili',
         name: 'b站主页',
         url: 'https://space.bilibili.com/57447177',
-        icon: 'FiVideo',
+        icon: 'SiBilibili',
         isExternal: true,
     },
 
-    {
-        id: 'blog',
-        name: '博客',
-        url: 'https://blog.ironname.top',
-        icon: 'FiEdit',
-        isExternal: true,
-    },
+    // {
+    //     id: 'blog',
+    //     name: '博客',
+    //     url: 'https://blog.ironname.top',
+    //     icon: 'FiEdit',
+    //     isExternal: true,
+    // },
     {
         id: 'projects',
         name: 'Github项目',
         url: 'https://github.com/1ronName?tab=repositories&sort=stargazers',
-        icon: 'FiFolder',
+        icon: 'FiGithub',
         isExternal: true,
     },
 
