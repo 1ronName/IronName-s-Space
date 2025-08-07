@@ -20,6 +20,13 @@ export const profileData: Profile = {
             icon: 'SiXiaohongshu',
             tooltip: '小红书'
         },
+        {
+            id: 'wechat',
+            username: '@GameDev之旅',
+            url: '/',
+            icon: 'SiWechat',
+            tooltip: '微信公众号'
+        },
         // {
         //     id: 'email',
         //     name: 'Email',

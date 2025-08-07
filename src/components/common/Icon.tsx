@@ -41,6 +41,7 @@ import {
   SiGodotengine,
   SiC,
   SiPython,
+  SiWechat,
   SiXiaohongshu,
 
 } from "react-icons/si";
@@ -87,6 +88,7 @@ const IconMap: Record<string, React.ComponentType<any>> = {
   SiGodotengine,
   SiC,
   SiPython,
+  SiWechat,
   SiXiaohongshu,
   
   // Material Design 图标
