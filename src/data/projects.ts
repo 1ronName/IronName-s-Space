@@ -12,7 +12,7 @@ export const projectsData: Project[] = [
         tags: ['游戏','GMTK GameJam 2025'],
         links: {
             demo: 'https://ironname.itch.io/photon-loop',
-            video: '/'
+            video: 'https://www.bilibili.com/video/BV1BVtXzaEcF'
         },
         featured: false,
         date: '2025-08-06',

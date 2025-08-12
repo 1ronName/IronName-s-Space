@@ -10,5 +10,11 @@ export const plansData: Plan[] = [
         description: 'V大预科作业2.0',
         progress: 30
     },
-    
+    {
+        id: 'story',
+        title: '故事写作',
+        description: '暂无练习计划',
+        progress: 0
+    },
+
 ];
