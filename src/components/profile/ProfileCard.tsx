@@ -66,10 +66,9 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
       >
 
         {social.map((link, index) => (
-          <div className="flex">
+          <div className="flex" key={link.id}>
 
           <motion.div
-            key={link.id}
             rel="noopener noreferrer"
             className="bg-white/10 dark:bg-white/5 backdrop-blur-sm w-9 h-9 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300"
             // whileHover={{ scale: 1.1, rotate: 5 }}
