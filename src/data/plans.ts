@@ -11,6 +11,12 @@ export const plansData: Plan[] = [
         progress: 30
     },
     {
+        id: 'blender',
+        title: 'Blender建模',
+        description: '【Kurt】Blender零基础入门教程',
+        progress: 0
+    },
+    {
         id: 'story',
         title: '故事写作',
         description: '暂无练习计划',
