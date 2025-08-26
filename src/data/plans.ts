@@ -8,7 +8,7 @@ export const plansData: Plan[] = [
         id: 'blender',
         title: 'Blender建模练习第一期',
         description: '【Kurt】Blender零基础入门教程',
-        progress: 50
+        progress: 100
     },
     {
         id: 'art-v',
