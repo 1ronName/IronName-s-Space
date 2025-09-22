@@ -27,7 +27,7 @@ export const skillsData: Skill[] = [
         id: 'model',
         name: '建模',
         category: 'gamedesign',
-        level: 1,
+        level: 2,
         icon: 'FaCube',
     },
     {

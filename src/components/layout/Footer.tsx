@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
 
   return (
     <footer className="py-4 mt-8 text-center text-sm text-text-light-secondary dark:text-text-dark-secondary">
-      <p>上次更新: {formatRelativeDate('2025/8/23 14:00')}</p>
+      <p>上次更新: {formatRelativeDate('2025/9/22 14:40')}</p>
       <p>© 2025 IronName</p>
     </footer>
   );

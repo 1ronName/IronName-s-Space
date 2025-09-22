@@ -3,6 +3,18 @@ import { Project } from '@/types';
 export const projectsData: Project[] = [
 
     // 每次添加在这里，自然形成倒序
+    {
+        id: 'melody witch',
+        title: '调律师',
+        description: '“调制音乐，改变人生”，聚光灯线下48hgamejam作品。5人小队，都是第一次参加线下48h限时开发，完工即胜利！ 但还是打算稍微修正下再发视频',
+        imageUrl: '/images/projects/调律师 宣传图.png',
+        tags: ['游戏','48h限时开发'],
+        links: {
+
+        },
+        featured: false,
+        date: '2025-09-14',
+    },
 
     {
         id: 'photon loop',
