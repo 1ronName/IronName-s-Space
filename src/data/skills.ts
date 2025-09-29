@@ -11,9 +11,9 @@ export const skillsData: Skill[] = [
     },
     {
         id: 'story',
-        name: '故事设计',
+        name: '故事写作',
         category: 'gamedesign',
-        level: 1,
+        level: 2,
         icon: 'FiEdit',
     },
     {

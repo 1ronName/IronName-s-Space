@@ -10,7 +10,8 @@ export const projectsData: Project[] = [
         imageUrl: '/images/projects/调律师 宣传图.png',
         tags: ['游戏','48h限时开发'],
         links: {
-
+            demo: 'https://ironname.itch.io/melody-witch',
+            video: 'https://www.bilibili.com/video/BV1ianBzqEtq'
         },
         featured: false,
         date: '2025-09-14',
