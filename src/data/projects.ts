@@ -11,7 +11,7 @@ export const projectsData: Project[] = [
         tags: ['游戏','48h限时开发'],
         links: {
             demo: 'https://ironname.itch.io/melody-witch',
-            video: 'https://www.bilibili.com/video/BV1ianBzqEtq'
+            video: 'https://www.bilibili.com/video/BV1ArHVzEEZw'
         },
         featured: false,
         date: '2025-09-14',
