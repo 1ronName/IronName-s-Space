@@ -3,6 +3,33 @@ import { Project } from '@/types';
 export const projectsData: Project[] = [
 
     // 每次添加在这里，自然形成倒序
+
+    {
+        id: 'last dance',
+        title: '最后一舞',
+        description: '米哈游策划大赛参赛作品。技术有所进步，但是这个甚至不能算游戏。名字有点晦气',
+        imageUrl: '/images/projects/最后一舞封面.png',
+        tags: ['游戏','限时开发'],
+        links: {
+            video: 'https://www.bilibili.com/video/BV1wGkSB2ECA'
+        },
+        featured: false,
+        date: '2025-11-09',
+    },
+
+    {
+        id: 'app looq',
+        title: 'LooQ-打卡与记录软件',
+        description: '用Electron框架做的一个小软件。本来想做桌宠的，但是Godot不好做托盘图标。',
+        imageUrl: '/images/projects/LooQ截图.png',
+        tags: ['软件'],
+        links: {
+            source: 'https://github.com/1ronName/LooQ',
+        },
+        featured: false,
+        date: '2025-10-12',
+    },
+
     {
         id: 'melody witch',
         title: '调律师',

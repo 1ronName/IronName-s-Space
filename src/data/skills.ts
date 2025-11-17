@@ -34,7 +34,7 @@ export const skillsData: Skill[] = [
         id: 'music',
         name: '音乐',
         category: 'gamedesign',
-        level: 0,
+        level: 1,
         icon: 'FiMusic',
     },
     {
@@ -71,7 +71,7 @@ export const skillsData: Skill[] = [
         id: 'frontend',
         name: '网站搭建',
         category: 'code',
-        level: 1,
+        level: 2,
         icon: 'FaReact',
     },
 
@@ -81,7 +81,7 @@ export const skillsData: Skill[] = [
         id: 'videomake',
         name: '视频制作',
         category: 'other',
-        level: 4,
+        level: 3,
         icon: 'FiVideo',
     },
     {
