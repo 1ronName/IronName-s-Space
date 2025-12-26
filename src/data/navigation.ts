@@ -15,7 +15,7 @@ export const navigationLinks: NavLink[] = [
         icon: 'FiEdit',
         isExternal: true,
     },
-    
+
     {
         id: 'itch.io',
         name: 'itch.io主页',
@@ -31,14 +31,13 @@ export const navigationLinks: NavLink[] = [
         icon: 'SiBilibili',
         isExternal: true,
     },
-
     
-    {
-        id: 'projects',
-        name: 'Github项目',
-        url: 'https://github.com/1ronName?tab=repositories&sort=stargazers',
-        icon: 'FiGithub',
-        isExternal: true,
-    },
+    // {
+    //     id: 'projects',
+    //     name: 'Github项目',
+    //     url: 'https://github.com/1ronName?tab=repositories&sort=stargazers',
+    //     icon: 'FiGithub',
+    //     isExternal: true,
+    // },
 
 ];

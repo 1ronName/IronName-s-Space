@@ -2,8 +2,8 @@ import { Profile } from '@/types';
 
 export const profileData: Profile = {
     name: 'IronName',
-    title: '是一个对游戏开发感兴趣的大学生，',
-    bio: "正在学习成为技术美术需要的知识",
+    title: '尊重客观规律，发挥主观能动性',
+    bio: "志同道合的人总会相遇",
     avatar: 'images/avatar3.png', 
     social: [
         {
