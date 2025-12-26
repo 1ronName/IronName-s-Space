@@ -113,7 +113,7 @@ const App: React.FC = () => {
     >
 
       <Helmet>
-        <title>{profileData.name} | 空间</title>
+        <title>{profileData.name} 个人页</title>
         <meta name="description" content={profileData.bio} />
         <meta name="keywords" content="IronName, 个人主页, 游戏设计开发," />
         {/* 添加视口设置，优化移动体验 */}
