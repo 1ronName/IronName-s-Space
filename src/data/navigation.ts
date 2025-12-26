@@ -8,7 +8,14 @@ export const navigationLinks: NavLink[] = [
     //     icon: 'FiHome',
     //     isExternal: false,
     // },
-
+    {
+        id: 'blog',
+        name: '博客',
+        url: 'https://blog.ironname.top',
+        icon: 'FiEdit',
+        isExternal: true,
+    },
+    
     {
         id: 'itch.io',
         name: 'itch.io主页',
@@ -25,13 +32,7 @@ export const navigationLinks: NavLink[] = [
         isExternal: true,
     },
 
-    // {
-    //     id: 'blog',
-    //     name: '博客',
-    //     url: 'https://blog.ironname.top',
-    //     icon: 'FiEdit',
-    //     isExternal: true,
-    // },
+    
     {
         id: 'projects',
         name: 'Github项目',

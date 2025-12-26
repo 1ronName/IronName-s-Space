@@ -8,7 +8,7 @@ export const plansData: Plan[] = [
         id: 'ta',
         title: '技术美术学习',
         description: '冲着技术美术岗位去的，这会是漫长的一段路',
-        progress: 10
+        progress: 5
     },
     {
         id: 'art-v',
