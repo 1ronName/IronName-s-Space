@@ -60,7 +60,7 @@ export const projectsData: Project[] = [
         id: 'photon loop',
         title: 'Photon Loop',
         description: '基于Godot物理的解密游戏，第三个游戏作品，个人4天内完成',
-        imageUrl: 'images/projects/photon loop.png',
+        imageUrl: '/images/projects/photon loop.png',
         tags: ['游戏','GMTK GameJam 2025'],
         links: {
             demo: 'https://ironname.itch.io/photon-loop',
@@ -74,7 +74,6 @@ export const projectsData: Project[] = [
         id: 'myspace',
         title: 'My Space 个人网站',
         description: '效仿dogxi建的个人网站（解决不了环境配置就直接拿大佬的源码部署的）',
-        // imageUrl: '/projects/mycard.jpg',
         tags: ['网站'],
         links: {
             source: 'https://github.com/1ronName/IronName-s-Space',
@@ -87,7 +86,7 @@ export const projectsData: Project[] = [
         id: 'watch your step',
         title: '小心脚下(Watch Your Step)',
         description: '以视觉受限为核心体验，并不好玩。第二个游戏作品，10天内独自完成。',
-        imageUrl: 'images/projects/小心脚下封面.png',
+        imageUrl: '/images/projects/小心脚下封面.png',
         tags: ['游戏','2025萌芽Gamejam'],
         links: {
             demo: 'https://ironname.itch.io/watch-your-step',
@@ -101,7 +100,7 @@ export const projectsData: Project[] = [
         id: 'collapsed dream',
         title: '破碎梦境(Collapsed Dream)',
         description: '物理，平台跳跃，第一个游戏作品。组员还有 美术叶，关卡设计吴。测试张',
-        imageUrl: 'images/projects/破碎梦境封面.png',
+        imageUrl: '/images/projects/破碎梦境封面.png',
         tags: ['游戏','2024吉比特高校GameJam'],
         links: {
             demo: 'https://ironname.itch.io/collapseddream',
@@ -115,7 +114,7 @@ export const projectsData: Project[] = [
         id: 'outer wilds gmv',
         title: '剧情向GMV | 群星在上，探索不止',
         description: '《Outer Wilds》的剧情向剪辑。虽然播放量不高，仍是我喜爱的作品',
-        imageUrl: 'images/projects/群星在上，仰望不止.png',
+        imageUrl: '/images/projects/群星在上，仰望不止.png',
         tags: ['视频'],
         links: {
             video: 'https://www.bilibili.com/video/BV1t337eUEkd/'
