@@ -3,6 +3,18 @@ import { Project } from '@/types';
 export const projectsData: Project[] = [
 
     // 每次添加在这里，自然形成倒序
+    {
+        id: 'ciga2026',
+        title: '深锚',
+        description: 'CiGA GJ 2026，尝试了ai代码工作流，我和DeepSeek V4 Flash 都燃尽了。人力不足，多个已实现的功能未实装',
+        imageUrl: '/images/projects/CiGA2026.jpg',
+        tags: ['游戏','限时开发'],
+        links: {
+            video: 'https://www.bilibili.com/video/BV1X3Mu6NESS'
+        },
+        featured: false,
+        date: '2026-07-05',
+    },
 
     {
         id: 'last dance',

@@ -3,13 +3,18 @@ import { Plan } from '@/types';
 export const plansData: Plan[] = [
 
     // 每次添加在这里，自然形成倒序
-
     {
-        id: 'ta',
-        title: '技术美术学习',
-        description: '冲着技术美术岗位去的，这会是漫长的一段路',
-        progress: 5
+        id: 'live',
+        title: '继续学习与生活',
+        description: '关注我现在能走的路，而不是非到不可的地方',
+        progress: 20
     },
+    // {
+    //     id: 'ta',
+    //     title: '技术美术学习',
+    //     description: '冲着技术美术岗位去的，这会是漫长的一段路',
+    //     progress: 5
+    // },
     // {
     //     id: 'art-v',
     //     title: '学画画',

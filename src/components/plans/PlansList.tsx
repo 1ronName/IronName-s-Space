@@ -18,7 +18,7 @@ const PlansList: React.FC<PlansListProps> = ({
 
   return (
     <div className="space-y-4">
-      {showTitle && <h2 className="text-xl font-medium">计划（大饼）</h2>}
+      {showTitle && <h2 className="text-xl font-medium">计划</h2>}
 
       <div className="space-y-4">
         {plans.map((plan, index) => (
