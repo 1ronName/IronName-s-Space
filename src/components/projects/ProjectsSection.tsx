@@ -4,9 +4,9 @@ import ButtonGroup from "@/components/common/ButtonGroup";
 import Button from "@/components/common/Button";
 import ProjectsList from "@/components/projects/ProjectsList";
 import MemosList from "@/components/memos/MemosList";
-// import ScrollArrow from "@/components/common/ScrollArrow";
+import ScrollArrow from "@/components/common/ScrollArrow";
 import { Project, Memo } from "@/types";
-import { FiFolder, FiChevronDown } from "react-icons/fi";
+import { FiFolder } from "react-icons/fi";
 import { BiMessageDetail } from "react-icons/bi";
 
 interface ProjectsSectionProps {
@@ -14,6 +14,7 @@ interface ProjectsSectionProps {
   memos: Memo[];
 }
 
+const CONTENT_HEIGHT = 800;
 type ContentType = "projects" | "memos";
 
 const ProjectsSection: React.FC<ProjectsSectionProps> = ({
@@ -53,7 +54,7 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({
         </ButtonGroup>
       </div>
 
-      <div className="relative" style={{ height: "800px" }}>
+      <div className="relative" style={{ height: `${CONTENT_HEIGHT}px` }}>
         {/* 添加 no-scrollbar 类来隐藏滚动条 */}
         <div
           className="content-container overflow-y-auto h-full no-scrollbar"
@@ -73,8 +74,6 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({
                 <ProjectsList
                   projects={projects}
                   showTitle={true}
-                  // 始终使用列表模式，不提供切换选项
-                  forceListMode={true}
                 />
               )}
 
@@ -85,28 +84,7 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({
           </AnimatePresence>
         </div>
 
-        {/* 移除蓝色圆形背景，只保留箭头图标 */}
-        <div
-          className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-50 flex items-center justify-center animate-bounce "
-          style={{
-            display:
-              containerRef.current &&
-              containerRef.current.scrollHeight >
-                containerRef.current.clientHeight &&
-              containerRef.current.scrollTop <
-                containerRef.current.scrollHeight -
-                  containerRef.current.clientHeight -
-                  20
-                ? "flex"
-                : "none",
-          }}
-        >
-          
-          <div className="bg-primary rounded-full p-1 shadow-md"
-          >
-          <FiChevronDown size={24} className="text-white/80" />
-          </div>
-        </div>
+        <ScrollArrow containerRef={containerRef} />
       </div>
     </div>
   );

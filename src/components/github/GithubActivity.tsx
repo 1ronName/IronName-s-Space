@@ -1,19 +1,15 @@
-import React from "react";
 import Card from "@/components/common/Card";
-// import { useTheme } from "@/contexts/ThemeContext";
 
 interface GithubActivityProps {
   username: string;
 }
 
 const GithubActivity: React.FC<GithubActivityProps> = ({ username }) => {
-  //   const { theme } = useTheme();
-
   return (
     <Card className="flex flex-col items-center h-full">
       <div className="w-full overflow-hidden mb-3">
         <img
-          src="https://proxy.dogxi.me/dogxii/dogxii/snake/snake.svg?proxy-host=raw.githubusercontent.com"
+          src={`https://proxy.dogxi.me/${username}/${username}/snake/snake.svg?proxy-host=raw.githubusercontent.com`}
           alt="GitHub Contribution Snake"
           className="w-full"
         />

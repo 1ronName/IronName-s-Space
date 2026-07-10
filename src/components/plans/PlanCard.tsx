@@ -1,17 +1,13 @@
-import React from "react";
 import { Plan } from "@/types";
-// import { motion } from "framer-motion";
 import Card from "@/components/common/Card";
 
 interface PlanCardProps {
   plan: Plan;
-  layout: "grid" | "list";
   delay: number;
 }
 
 const PlanCard: React.FC<PlanCardProps> = ({
   plan,
-  delay
 }) => {
   const { title, description, progress } = plan;
   const levelDots = Array(20)
@@ -27,12 +23,7 @@ const PlanCard: React.FC<PlanCardProps> = ({
     ));
 
   return (
-    <Card
-      className="flex overflow-hidden"
-      delay={delay}
-      // 减少不必要的动画
-      animate={delay < 5} // 只有前5个项目有动画
-    >
+    <Card className="flex overflow-hidden">
 
       <div className="flex-grow">
         <div className="flex items-center justify-between mb-2">

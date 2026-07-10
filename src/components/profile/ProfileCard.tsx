@@ -66,34 +66,25 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
       >
 
         {social.map((link, index) => (
-          <div className="flex" key={link.id}>
-
-          <motion.div
+          <motion.a
+            key={link.id}
+            href={link.url}
+            target="_blank"
             rel="noopener noreferrer"
-            className="bg-white/10 dark:bg-white/5 backdrop-blur-sm w-9 h-9 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300"
-            // whileHover={{ scale: 1.1, rotate: 5 }}
-            // whileTap={{ scale: 0.9 }}
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.2 + index * 0.1, duration: 0.2 }}
-            // aria-label={link.name}
-            title= {link.tooltip}
+            className="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-white/10 dark:hover:bg-white/5 transition-all duration-300"
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 + index * 0.1, duration: 0.3 }}
+            title={link.tooltip}
+            aria-label={link.tooltip}
           >
-
-          <Icon name={link.icon} size={20} />
-          </motion.div>
-
-
-          <motion.p
-            className="text-sm text-text-light-secondary dark:text-text-dark-secondary mb-6 max-w-xs align-text-bottom"
-            initial={{ opacity: 0, y : 0}}
-            animate={{ opacity: 1, y : 8}}
-            transition={{ delay: 0.3, duration: 0.4 }}
-          >
-          {link.username}
-          </motion.p>
-
-          </div>
+            <div className="bg-white/10 dark:bg-white/5 backdrop-blur-sm w-9 h-9 rounded-full flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all duration-300">
+              <Icon name={link.icon} size={20} />
+            </div>
+            <span className="text-sm text-text-light-secondary dark:text-text-dark-secondary">
+              {link.username}
+            </span>
+          </motion.a>
         ))}
 
       </motion.div>

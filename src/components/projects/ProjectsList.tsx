@@ -5,17 +5,12 @@ import ProjectCard from "./ProjectCard";
 interface ProjectsListProps {
   projects: Project[];
   showTitle?: boolean;
-  forceListMode?: boolean;
 }
 
 const ProjectsList: React.FC<ProjectsListProps> = ({
   projects,
   showTitle = true,
-  //   forceListMode = false,
 }) => {
-  // 始终使用列表模式
-  const viewMode = "list";
-
   return (
     <div className="space-y-4">
       {showTitle && <h2 className="text-xl font-medium">项目</h2>}
@@ -25,7 +20,6 @@ const ProjectsList: React.FC<ProjectsListProps> = ({
           <ProjectCard
             key={project.id}
             project={project}
-            layout={viewMode}
             delay={index}
           />
         ))}

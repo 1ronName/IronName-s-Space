@@ -1,4 +1,3 @@
-import React from "react";
 import {
   FiHome,
   FiUser,
@@ -48,7 +47,7 @@ import {
 import { MdDesignServices } from "react-icons/md";
 
 // 创建图标映射对象
-const IconMap: Record<string, React.ComponentType<any>> = {
+const IconMap: Record<string, React.ComponentType<{ size?: number; className?: string }>> = {
   // Feather 图标
   FiHome,
   FiUser,
@@ -106,7 +105,9 @@ const Icon: React.FC<IconProps> = ({ name, size = 24, className = "" }) => {
   const IconComponent = IconMap[name];
 
   if (!IconComponent) {
-    console.warn(`Icon "${name}" not found`);
+    if (import.meta.env.DEV) {
+      console.warn(`Icon "${name}" not found`);
+    }
     return null;
   }
 

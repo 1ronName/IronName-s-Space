@@ -16,7 +16,7 @@ export const profileData: Profile = {
         {
             id: 'rednote',
             username: '铁名_IronName',
-            url: 'https://space.bilibili.com/57447177',
+            url: 'https://www.xiaohongshu.com/user/profile/64167f6400000000140107a3',
             icon: 'SiXiaohongshu',
             tooltip: '小红书'
         },

@@ -32,11 +32,11 @@ const parseMarkdown = (text: string) => {
   return result;
 };
 
-const MemoCard: React.FC<MemoCardProps> = ({ memo, delay }) => {
+const MemoCard: React.FC<MemoCardProps> = ({ memo }) => {
   const { content, date, tags } = memo;
 
   return (
-    <Card delay={delay}>
+    <Card>
       <p className="text-sm text-text-light-secondary dark:text-text-dark-secondary mb-2">
         {formatDate(date)}
       </p>

@@ -4,7 +4,7 @@ import Button from "@/components/common/Button";
 import { Skill } from "@/types";
 import { motion } from "framer-motion";
 import Icon from "@/components/common/Icon";
-import { FiCode, FiServer, FiFeather } from "react-icons/fi";
+import { FiCode, FiMoreHorizontal, FiFeather } from "react-icons/fi";
 
 interface SkillsListProps {
   skills: Skill[];
@@ -54,7 +54,7 @@ const SkillsList: React.FC<SkillsListProps> = ({
               ariaLabel="其他技能"
               tooltip="其他"
             >
-              <FiServer />
+              <FiMoreHorizontal />
             </Button>
           </ButtonGroup>
         </div>

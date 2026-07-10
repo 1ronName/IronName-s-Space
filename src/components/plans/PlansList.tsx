@@ -5,17 +5,12 @@ import PlanCard from "./PlanCard";
 interface PlansListProps {
   plans: Plan[];
   showTitle?: boolean;
-  forceListMode?: boolean;
 }
 
 const PlansList: React.FC<PlansListProps> = ({
   plans,
   showTitle = true,
-  //   forceListMode = false,
 }) => {
-  // 始终使用列表模式
-  const viewMode = "list";
-
   return (
     <div className="space-y-4">
       {showTitle && <h2 className="text-xl font-medium">计划</h2>}
@@ -25,7 +20,6 @@ const PlansList: React.FC<PlansListProps> = ({
           <PlanCard
             key={plan.id}
             plan={plan}
-            layout={viewMode}
             delay={index}
           />
         ))}

@@ -1,9 +1,8 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import MainLayout from "@/components/layout/MainLayout";
 import ProfileCard from "@/components/profile/ProfileCard";
-import PlansList from "@/components/plans/PlansList"
-// import GithubActivity from "@/components/github/GithubActivity";
+import PlansList from "@/components/plans/PlansList";
 import SkillsList from "@/components/skills/SkillsList";
 import NavigationLinks from "@/components/navigation/NavigationLinks";
 import ProjectsSection from "@/components/projects/ProjectsSection";
@@ -19,11 +18,9 @@ import { navigationLinks } from "@/data/navigation";
 const App: React.FC = () => {
   const { theme } = useTheme();
 
-  // 确保背景图片预先加载
+  // 预加载背景图和第一个项目图片
   useEffect(() => {
-    // 预加载背景图和第一个项目图片
     const preloadImages = [
-      // "/background-light.webp",
       "/images/IMG20240721193632-2.jpg",
       projectsData[0]?.imageUrl,
     ].filter(Boolean);
@@ -34,29 +31,6 @@ const App: React.FC = () => {
         img.src = url;
       }
     });
-
-  }, []);
-
-  // 添加调试函数，检查图片是否可访问
-  useEffect(() => {
-    const checkImageExists = (url: string) => {
-      console.log(`Checking image: ${url}`);
-      fetch(url)
-        .then((response) => {
-          if (response.ok) {
-            console.log(`✅ Image exists: ${url}`);
-          } else {
-            console.error(`❌ Image not found: ${url} (${response.status})`);
-          }
-        })
-        .catch((error) => {
-          console.error(`❌ Error checking image: ${url}`, error);
-        });
-    };
-
-    // 检查背景图片
-    // checkImageExists("/background-light.webp");
-    checkImageExists("/images/IMG20240721193632-2.jpg");
   }, []);
 
   // 左侧边栏内容
@@ -70,17 +44,7 @@ const App: React.FC = () => {
         social={profileData.social}
       />
 
-      <PlansList plans={plansData}/>
-
-      {/* <GithubActivity
-        username={
-          profileData.social
-            .find((s) => s.id === "github")
-            ?.url.split("/")
-            .pop() || "github"
-        }
-      /> */}
-
+      <PlansList plans={plansData} />
     </div>
   );
 
@@ -98,11 +62,7 @@ const App: React.FC = () => {
     </div>
   );
 
-  // 确保图片路径正确，移除前导斜杠
-  //   const lightBgPath = "background-light.webp";
-  //   const darkBgPath = "background-dark.webp";
-
-  // 确保App容器占满整个视口，但不再使用黑色背景
+  // 确保App容器占满整个视口
   return (
     <div
       className="min-h-screen w-full"
@@ -115,11 +75,10 @@ const App: React.FC = () => {
       <Helmet>
         <title>{profileData.name} 个人页</title>
         <meta name="description" content={profileData.bio} />
-        <meta name="keywords" content="IronName, 个人主页, 游戏设计开发," />
-        {/* 添加视口设置，优化移动体验 */}
+        <meta name="keywords" content={`${profileData.name}, 个人主页, 游戏设计开发`} />
         <meta
           name="viewport"
-          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+          content="width=device-width, initial-scale=1.0"
         />
         {/* 设置主题色，与背景匹配 */}
         <meta
@@ -135,6 +94,7 @@ const App: React.FC = () => {
           <img
             src="/images/IMG20240721193632-2.jpg"
             alt=""
+            aria-hidden="true"
             className="absolute w-[120%] h-[120%] object-cover"
             style={{
               left: "-10%",

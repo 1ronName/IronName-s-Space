@@ -1,6 +1,5 @@
-import React, { createContext, useContext, useEffect, useState } from "react";
-
-type Theme = "dark" | "light";
+import React, { createContext, useContext, useEffect, useMemo, useState } from "react";
+import { Theme } from "@/types";
 
 interface ThemeContextType {
   theme: Theme;
@@ -43,8 +42,10 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
     setTheme((prevTheme) => (prevTheme === "dark" ? "light" : "dark"));
   };
 
+  const value = useMemo(() => ({ theme, toggleTheme }), [theme]);
+
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+    <ThemeContext.Provider value={value}>
       {children}
     </ThemeContext.Provider>
   );
