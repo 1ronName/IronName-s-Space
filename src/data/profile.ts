@@ -15,7 +15,7 @@ export const profileData: Profile = {
         },
         {
             id: 'rednote',
-            username: '铁名_IronName',
+            username: '泠辰_LingChen',
             url: 'https://www.xiaohongshu.com/user/profile/64167f6400000000140107a3',
             icon: 'SiXiaohongshu',
             tooltip: '小红书'
@@ -27,13 +27,13 @@ export const profileData: Profile = {
             icon: 'SiWechat',
             tooltip: '微信公众号'
         },
-        // {
-        //     id: 'email',
-        //     name: 'Email',
-        //     url: 'mailto:w526377yu@qq.com',
-        //     icon: 'FiMail',
-        //     tooltip: '发送邮件'
-        // },
+        {
+            id: 'email',
+            username: 'w526377yu@qq.com',
+            url: 'mailto:w526377yu@qq.com',
+            icon: 'FiMail',
+            tooltip: '发送邮件'
+        },
     ],
     location: '中国',
     email: 'w526377yu@qq.com',
