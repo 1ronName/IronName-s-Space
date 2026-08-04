@@ -30,22 +30,36 @@ export const skillsData: Skill[] = [
         level: 2,
         icon: 'FaCube',
     },
-    {
-        id: 'music',
-        name: '音乐',
-        category: 'gamedesign',
-        level: 1,
-        icon: 'FiMusic',
-    },
-    {
-        id: 'sfx',
-        name: '音效设计',
-        category: 'gamedesign',
-        level: 1,
-        icon: 'FiHeadphones',
-    },
+    // {
+    //     id: 'music',
+    //     name: '音乐',
+    //     category: 'gamedesign',
+    //     level: 1,
+    //     icon: 'FiMusic',
+    // },
+    // {
+    //     id: 'sfx',
+    //     name: '音效设计',
+    //     category: 'gamedesign',
+    //     level: 1,
+    //     icon: 'FiHeadphones',
+    // },
 
     // 编程技能
+    {
+        id: 'ue',
+        name: 'UE',
+        category: 'code',
+        level: 1,
+        icon: 'SiUnrealengine',
+    },
+    {
+        id: 'unity',
+        name: 'Unity',
+        category: 'code',
+        level: 1,
+        icon: 'SiUnity',
+    },
     {
         id: 'gdscript',
         name: 'GDscript',
@@ -64,7 +78,7 @@ export const skillsData: Skill[] = [
         id: 'python',
         name: 'Python',
         category: 'code',
-        level: 2,
+        level: 3,
         icon: 'SiPython',
     },
     {
@@ -84,11 +98,11 @@ export const skillsData: Skill[] = [
         level: 3,
         icon: 'FiVideo',
     },
-    {
-        id: 'search',
-        name: '搜索',
-        category: 'other',
-        level: 4,
-        icon: 'FiSearch',
-    },
+    // {
+    //     id: 'search',
+    //     name: '搜索',
+    //     category: 'other',
+    //     level: 4,
+    //     icon: 'FiSearch',
+    // },
 ];

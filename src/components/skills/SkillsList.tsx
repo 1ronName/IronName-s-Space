@@ -17,8 +17,8 @@ const SkillsList: React.FC<SkillsListProps> = ({
   skills,
   showTitle = true,
 }) => {
-  // 默认显示游戏设计技能
-  const [category, setCategory] = useState<FilterCategory>("gamedesign");
+  // 默认显示 技能
+  const [category, setCategory] = useState<FilterCategory>("code");
 
   // 按类别过滤技能
   const filteredSkills = skills.filter((skill) => skill.category === category);
@@ -33,14 +33,6 @@ const SkillsList: React.FC<SkillsListProps> = ({
           <h2 className="text-lg font-medium">技能</h2>
           <ButtonGroup>
             <Button
-              isActive={category === "gamedesign"}
-              onClick={() => setCategory("gamedesign")}
-              ariaLabel="游戏设计"
-              tooltip="游戏设计"
-            >
-             <FiFeather />
-            </Button>
-            <Button
               isActive={category === "code"}
               onClick={() => setCategory("code")}
               ariaLabel="编程技能"
@@ -48,6 +40,16 @@ const SkillsList: React.FC<SkillsListProps> = ({
             >
               <FiCode />
             </Button>
+            
+            <Button
+              isActive={category === "gamedesign"}
+              onClick={() => setCategory("gamedesign")}
+              ariaLabel="游戏设计"
+              tooltip="游戏设计"
+            >
+             <FiFeather />
+            </Button>
+
             <Button
               isActive={category === "other"}
               onClick={() => setCategory("other")}
@@ -81,7 +83,7 @@ const SkillsList: React.FC<SkillsListProps> = ({
                   <div className="text-xs font-medium truncate">
                     {skill.name}
                   </div>
-                  <div className="flex mt-1 space-x-0.5">
+                  {/* <div className="flex mt-1 space-x-0.5">
                     {Array(5)
                       .fill(0)
                       .map((_, i) => (
@@ -94,7 +96,7 @@ const SkillsList: React.FC<SkillsListProps> = ({
                           }`}
                         />
                       ))}
-                  </div>
+                  </div> */}
                 </div>
               </motion.div>
             ))

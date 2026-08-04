@@ -9,6 +9,12 @@ export const plansData: Plan[] = [
         description: '关注我现在能走的路，而不是非到不可的地方',
         progress: 20
     },
+    {
+        id: 'forwork',
+        title: '准备游戏客户端',
+        description: 'Go!',
+        progress: 5
+    },
     // {
     //     id: 'ta',
     //     title: '技术美术学习',

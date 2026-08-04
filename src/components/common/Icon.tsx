@@ -42,7 +42,8 @@ import {
   SiPython,
   SiWechat,
   SiXiaohongshu,
-
+  SiUnrealengine,
+  SiUnity
 } from "react-icons/si";
 import { MdDesignServices } from "react-icons/md";
 
@@ -89,6 +90,8 @@ const IconMap: Record<string, React.ComponentType<{ size?: number; className?: s
   SiPython,
   SiWechat,
   SiXiaohongshu,
+  SiUnrealengine,
+  SiUnity,
   
   // Material Design 图标
   MdDesignServices,
