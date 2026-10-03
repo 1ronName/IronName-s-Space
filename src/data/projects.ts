@@ -6,7 +6,7 @@ export const projectsData: Project[] = [
     {
         id: 'ciga2026',
         title: '深锚',
-        description: 'CiGA GJ 2026，尝试了ai代码工作流，我和DeepSeek V4 Flash 都燃尽了。人力不足，多个已实现的功能未实装',
+        description: 'CiGA GJ 2026，尝试了ai代码工作流，我和 DeepSeek V4 Flash 都燃尽了。人力不足，多个已实现的功能未实装',
         imageUrl: '/images/projects/CiGA2026.jpg',
         tags: ['游戏','限时开发'],
         links: {
@@ -19,7 +19,7 @@ export const projectsData: Project[] = [
     {
         id: 'last dance',
         title: '最后一舞',
-        description: '米哈游策划大赛参赛作品。技术有所进步，但是这个甚至不能算游戏。名字有点晦气',
+        description: '米哈游策划大赛参赛作品，技术有所进步。名字有点晦气',
         imageUrl: '/images/projects/最后一舞封面.png',
         tags: ['游戏','限时开发'],
         links: {
@@ -45,7 +45,7 @@ export const projectsData: Project[] = [
     {
         id: 'melody witch',
         title: '调律师',
-        description: '“调制音乐，改变人生”，聚光灯线下48hgamejam作品。5人小队，都是第一次参加线下48h限时开发，完工即胜利！ 但还是打算稍微修正下再发视频',
+        description: '“调制音乐，改变人生”，聚光灯线下48hgamejam作品。5人小队，都是第一次参加线下48h限时开发，完工即胜利！ ',
         imageUrl: '/images/projects/调律师 宣传图.png',
         tags: ['游戏','48h限时开发'],
         links: {
@@ -85,7 +85,7 @@ export const projectsData: Project[] = [
     {
         id: 'watch your step',
         title: '小心脚下(Watch Your Step)',
-        description: '以视觉受限为核心体验，并不好玩。第二个游戏作品，10天内独自完成。',
+        description: '以视觉受限为核心体验。第二个游戏作品，10天内独自完成。',
         imageUrl: '/images/projects/小心脚下封面.png',
         tags: ['游戏','2025萌芽Gamejam'],
         links: {

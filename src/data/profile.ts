@@ -13,20 +13,20 @@ export const profileData: Profile = {
             icon: 'SiBilibili',
             tooltip: 'bilibili'
         },
-        {
-            id: 'rednote',
-            username: '泠辰_LingChen',
-            url: 'https://www.xiaohongshu.com/user/profile/64167f6400000000140107a3',
-            icon: 'SiXiaohongshu',
-            tooltip: '小红书'
-        },
-        {
-            id: 'wechat',
-            username: 'GameDev之旅',
-            url: '/',
-            icon: 'SiWechat',
-            tooltip: '微信公众号'
-        },
+        // {
+        //     id: 'rednote',
+        //     username: '泠辰_LingChen',
+        //     url: 'https://www.xiaohongshu.com/user/profile/64167f6400000000140107a3',
+        //     icon: 'SiXiaohongshu',
+        //     tooltip: '小红书'
+        // },
+        // {
+        //     id: 'wechat',
+        //     username: 'GameDev之旅',
+        //     url: '/',
+        //     icon: 'SiWechat',
+        //     tooltip: '微信公众号'
+        // },
         {
             id: 'email',
             username: 'w526377yu@qq.com',
